@@ -1,0 +1,160 @@
+body {
+  background-image: url(https://i.stack.imgur.com/pMAiU.jpg);
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: rgb(20, 0, 201);
+}
+.btn-orng-black {
+  background-color: rgb(8, 212, 178);
+  color: rgb(0, 0, 0);
+}
+.btn-black-orng {
+  background-color: rgb(8, 212, 178);
+  color: rgb(0, 0, 0);
+}
+.form-header {
+  color: rgb(250, 3, 3);
+  height: 50px;
+  margin-top: 25px;
+}
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"] {
+  background-color: #1b1b1b;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  background-color: #d4bcbc;
+  border: 1px solid rgb(221, 214, 214);
+  color: rgb(231, 231, 231);
+}
+h1,
+h5 {
+  text-align: center;
+}
+h1 {
+  color: rgb(0, 255, 255);
+}
+h5 {
+  color: #00eeff;
+}
+form {
+  width: 60%;
+  margin: 50px auto;
+}
+.progress {
+  width: 40%;
+  margin: 50px auto;
+  border: 1px solid rgb(2, 2, 2);
+}
+.progress-bar {
+  width: 25%;
+}
+.outer-div {
+  width: 40%;
+  margin: 10px auto 60px auto;
+  border: 1px solid rgb(0, 0, 0);
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.form-group {
+  margin: 10% 0;
+}
+.logo-blocks {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.hub {
+  display: block;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0 auto;
+}
+.hub span:first-child {
+  color: rgb(0, 247, 255);
+}
+.hub span:nth-child(2) {
+  background: #ff0000;
+  color: #ff0000;
+  border-radius: 5px;
+  display: inline-block;
+}
+p {
+  margin: 10%;
+  word-break: break-all;
+  color: rgb(0, 238, 255);
+}
+.stepper-wrapper {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.stepper-item::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ff9900;
+  width: 100%;
+  top: 20px;
+  left: -50%;
+  z-index: 2;
+}
+.stepper-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ff9900;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 2;
+}
+.stepper-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  margin-bottom: 6px;
+}
+.stepper-item.active {
+  font-weight: bold;
+  color: #ff9900;
+}
+.stepper-item.completed .step-counter {
+  background-color: #ff9900;
+}
+
+.stepper-item.completed::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ff9900;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 3;
+}
